@@ -1,0 +1,14 @@
+name: CloudConfig
+version: '1.0-SNAPSHOT'
+main: de.aboutcloud.cloudConfig.CloudConfig
+api-version: '1.21'
+authors: [ "AboutCloud" ]
+description: Centralised config + locale manager for Paper plugins
+commands:
+  cloudconfig:
+    description: Manage configs and locales across plugins
+    usage: /cloudconfig <reload|listlocales|set>
+    permission: cloudconfig.admin
+permissions:
+  cloudconfig.admin:
+    default: op
