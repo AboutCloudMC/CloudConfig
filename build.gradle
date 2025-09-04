@@ -18,21 +18,20 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.4.1'
 }
 
 tasks {
     runServer {
-        // Configure the Minecraft version for our task.
-        // This is the only required configuration besides applying the plugin.
-        // Your plugin's jar (or shadowJar if present) will be used automatically.
         minecraftVersion("1.21")
     }
 }
 
 tasks.named('shadowJar') {
-    archiveClassifier.set('')      // make the shaded jar the main artifact name
-    // Optional relocations to avoid clashes:
-    // relocate 'net.kyori.adventure.text.minimessage', 'com.example.cloudconfig.libs.minimessage'
+    archiveClassifier.set('')
+    mergeServiceFiles()
 }
 
 publishing {
@@ -42,12 +41,11 @@ publishing {
             artifactId = 'cloudconfig'
             version = project.version.toString()
 
-            // publish the shaded JAR (shadowJar) instead of the plain jar
             artifact tasks.named('shadowJar').get()
         }
     }
     repositories {
-        mavenLocal() // enables `publishToMavenLocal`
+        mavenLocal()
     }
 }
 

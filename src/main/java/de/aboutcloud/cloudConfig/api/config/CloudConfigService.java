@@ -1,4 +1,4 @@
-package de.aboutcloud.cloudConfig.api;
+package de.aboutcloud.cloudConfig.api.config;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;

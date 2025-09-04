@@ -1,4 +1,4 @@
-package de.aboutcloud.cloudConfig.api;
+package de.aboutcloud.cloudConfig.api.config;
 
 import org.bukkit.plugin.ServicesManager;
 import org.bukkit.plugin.java.JavaPlugin;

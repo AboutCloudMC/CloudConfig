@@ -1,6 +1,6 @@
 package de.aboutcloud.cloudConfig.command;
 
-import de.aboutcloud.cloudConfig.api.CloudConfigService;
+import de.aboutcloud.cloudConfig.api.config.CloudConfigService;
 import de.aboutcloud.cloudConfig.util.YamlUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

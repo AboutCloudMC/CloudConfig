@@ -12,3 +12,6 @@ commands:
 permissions:
   cloudconfig.admin:
     default: op
+libraries:
+  - org.mariadb.jdbc:mariadb-java-client:3.4.1
+  - com.zaxxer:HikariCP:5.1.0

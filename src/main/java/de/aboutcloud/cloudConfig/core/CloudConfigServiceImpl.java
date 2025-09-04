@@ -1,7 +1,7 @@
 package de.aboutcloud.cloudConfig.core;
 
-import de.aboutcloud.cloudConfig.api.CloudConfigRegistration;
-import de.aboutcloud.cloudConfig.api.CloudConfigService;
+import de.aboutcloud.cloudConfig.api.config.CloudConfigRegistration;
+import de.aboutcloud.cloudConfig.api.config.CloudConfigService;
 import de.aboutcloud.cloudConfig.util.LocaleUtil;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;

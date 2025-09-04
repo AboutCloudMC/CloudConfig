@@ -1,4 +1,4 @@
-package de.aboutcloud.cloudConfig.api;
+package de.aboutcloud.cloudConfig.api.config;
 
 import java.util.List;
 import java.util.Objects;
